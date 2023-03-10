@@ -10,7 +10,7 @@ const Footer = () => {
             <img src={Logo2} className="mr-1 h-12" alt="FlowBite Logo" />
             <span className="flex items-center font-Poppins gap-1">
               <p className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-                Frend
+                Frend   
               </p>
               <small className="text-[9px]"> <br/> 
               by <strong>Adham</strong></small>
