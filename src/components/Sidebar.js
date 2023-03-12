@@ -51,8 +51,8 @@ export default function Sidebar() {
     <>
       <div>
         <header
-          className={`inset-x-0 duration-200 py-4 px-10 fixed top-0 flex items-center justify-between shadow-md mb-10 ${
-            colorChange ? "text-black bg-white" : "text-white"
+          className={`inset-x-0 duration-200 py-4 px-10 fixed top-0 flex items-center justify-between mb-10 ${
+            colorChange ? "text-black bg-white shadow-md" : "text-white shadow-none"
           }`}
         >
           <a href="#">
