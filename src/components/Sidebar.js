@@ -26,25 +26,25 @@ export default function Sidebar() {
   var winHash = window.location.hash;
 
   if (winHash === "") {
-    active1 = "text-pink-400";
+    active1 = "text-blue-400";
     active2 = "text-black";
     active3 = "text-black";
     active4 = "text-black";
   } else if (winHash === "#AboutSect") {
     active1 = "text-black";
-    active2 = "text-pink-400";
+    active2 = "text-blue-400";
     active3 = "text-black";
     active4 = "text-black";
   } else if (winHash === "#WorksSect") {
     active1 = "text-black";
     active2 = "text-black";
-    active3 = "text-pink-400";
+    active3 = "text-blue-400";
     active4 = "text-black";
   } else if (winHash === "#ContactSect") {
     active1 = "text-black";
     active2 = "text-black";
     active3 = "text-black";
-    active4 = "text-pink-400";
+    active4 = "text-blue-400";
   }
 
   return (
@@ -63,16 +63,16 @@ export default function Sidebar() {
           {!isOpen ? (
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="px-6 py-2 font-bold text-base rounded-md hover:shadow-md transform"
+              className="px-6 py-2 font-bold text-xs rounded-md hover:shadow-md transform flex items-center gap-2"
             >
-              <FontAwesomeIcon icon={faBars} />
+              Menu <FontAwesomeIcon className="text-xl" icon={faBars} />
             </button>
           ) : (
             <button
-              className="text-black hover:text-gray-400 transform duration-200 fixed top-4 right-4 text-xl z-10"
+              className="text-black hover:text-gray-400 transform duration-200 fixed top-4 right-4 text-xs z-10 flex gap-2 items-center"
               onClick={() => setIsOpen(!isOpen)}
             >
-              <FontAwesomeIcon icon={faXmark} />
+             Close <FontAwesomeIcon className="text-xl" icon={faXmark} />
             </button>
           )}
           <aside
@@ -87,7 +87,7 @@ export default function Sidebar() {
               }}
             >
               <h3
-                className={`text-xl hover:text-pink-400 transform duration-200 ${active1}`}
+                className={`text-xl hover:text-blue-400 transform duration-200 ${active1}`}
               >
                 Home
               </h3>
@@ -99,7 +99,7 @@ export default function Sidebar() {
               }}
             >
               <h3
-                className={`text-xl hover:text-pink-400 mt-5 transform duration-200 ${active2}`}
+                className={`text-xl hover:text-blue-400 mt-5 transform duration-200 ${active2}`}
               >
                 About
               </h3>
@@ -111,7 +111,7 @@ export default function Sidebar() {
               }}
             >
               <h3
-                className={`text-xl hover:text-pink-400 mt-5 transform duration-200 ${active3}`}
+                className={`text-xl hover:text-blue-400 mt-5 transform duration-200 ${active3}`}
               >
                 My Works
               </h3>
@@ -123,7 +123,7 @@ export default function Sidebar() {
               }}
             >
               <h3
-                className={`text-xl hover:text-pink-400 mt-5 transform duration-200 ${active4}`}
+                className={`text-xl hover:text-blue-400 mt-5 transform duration-200 ${active4}`}
               >
                 Contact me
               </h3>

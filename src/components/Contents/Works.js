@@ -1,9 +1,10 @@
 import ClientsDataProjects from "../Data/ClientsProjectList";
+import '../AppIn.css'
 
 const Works = () => {
   return (
     <section id="WorksSect">
-      <div className="w-screen max-h-screen overflow-y-scroll p-20">
+      <div className="w-screen max-h-screen overflow-y-scroll bg-works p-20 bg-gray-100">
         <div className="w-full h-fit text-center">
           <h1 className="font-Poppins font-bold text-3xl">My Works</h1>
           <p className="mt-3 font-Roboto">Mobile App and Websites</p>
@@ -11,9 +12,9 @@ const Works = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 my-20 w-full gap-10">
           {ClientsDataProjects.map(({ image, progress, className, link }) => {
             return (
-              <div className="w-full h-full flex justify-center ">
+              <div className="w-full h-full flex justify-center">
                 <a href={link} target={"_blank"} rel="noreferrer">
-                  <div className="w-fit h-96 shadow-sm shadow-gray-300 p-5 border-t-4 border-gray-200 hover:shadow-lg hover:p-6 transform duration-200 grid place-items-center">
+                  <div className="w-fit h-96 shadow-sm shadow-gray-300 p-5 bg-white border-t-4 border-gray-200 hover:shadow-lg hover:p-6 transform duration-200 grid place-items-center">
                     <div className={`w-fit h-fit ${className}`}>
                       <img src={image} alt="" className="object-content w-60" />
                     </div>

@@ -1,7 +1,14 @@
 .Bg-img{
-    background-image: url(../images/Desk.jpg);
-    background-blend-mode: darken;
+    background-image: url(../images/desk.png);
+    background-blend-mode: color-burn;
     background-repeat: no-repeat;
+    background-position: 0px -70px;
+}
+
+.bg-works{
+    background-image: url(../images/whitebrick.png);
+    background-blend-mode: lighten;
+    background-repeat: repeat-y;
 }
 
 html, body{

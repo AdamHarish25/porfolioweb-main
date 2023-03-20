@@ -27,9 +27,9 @@ const Contact = () => {
   };
   return (
     <section id="ContactSect">
-      <div className="w-screen h-auto p-10 lg:p-20 bg-gray-100">
+      <div className="w-screen h-auto p-10 lg:p-20 bg-blue-400">
         <div className="h-fit w-full text-center py-10">
-          <h1 className="text-2xl font-Poppins font-bold">Get in touch</h1>
+          <h1 className="text-2xl font-Poppins text-white font-bold">Get in touch</h1>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 my-10">
           <form onSubmit={onSubmit}>
