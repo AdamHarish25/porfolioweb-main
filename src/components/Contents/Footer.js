@@ -1,26 +1,27 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import Logo2 from "../../images/Logo2.png";
+import { DataStorageEN, DataStorageID } from "../Data/WholeDatas";
 
-const Footer = () => {
+const Footer = ({ lang = "", setScrollTo }) => {
+
+  var Data = (lang === "EN" ? DataStorageEN : DataStorageID).FooterData;
+
+
   return (
     <footer id="foot" className="p-4 bg-white sm:p-6 dark:bg-gray-800">
       <div className="md:flex md:justify-between">
         <div className="mb-6 md:mb-0">
           <a href="#" className="flex items-center">
             <img src={Logo2} className="mr-1 h-12" alt="FlowBite Logo" />
-            <span className="flex items-center font-Poppins gap-1">
-              <p className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-                Frend   
-              </p>
-              <small className="text-[9px]"> <br/> 
-              by <strong>Adham</strong></small>
+            <span className="flex items-center font-Poppins gap-1 self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+              Adhag
             </span>
           </a>
         </div>
         <div className="grid grid-cols-2 sm:gap-0 md:gap-10 mr-5">
           <div>
             <h2 className="mb-6 text-sm font-semibold font-Poppins text-gray-900 uppercase dark:text-white">
-              Resources
+              {Data.title1}
             </h2>
             <ul className="text-gray-600 dark:text-gray-400">
               <li className="mb-4">
@@ -37,7 +38,7 @@ const Footer = () => {
           </div>
           <div>
             <h2 className="mb-6 text-sm font-semibold font-Poppins text-gray-900 uppercase dark:text-white">
-              Follow me
+              {Data.title2}
             </h2>
             <ul className="text-gray-600 dark:text-gray-400">
               <li className="mb-4">
@@ -63,8 +64,8 @@ const Footer = () => {
       <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
       <div className="sm:flex sm:items-center sm:justify-between">
         <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-          <a href="https://frendbyadham.site" className="hover:underline">
-            frendbyadham.site
+          <a href="https://adhagwage.site" target="_blank" className="hover:underline">
+            adhagwage.site
           </a>
         </span>
         <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0 mr-6">

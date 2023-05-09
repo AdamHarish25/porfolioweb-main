@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Sidebar from "./components/Sidebar";
 import ButtonUp from "./components/buttonGoUp";
 import HelpButton from "./components/HelpButton";
@@ -13,16 +13,43 @@ import Contact from "./components/Contents/Contact";
 import Footer from "./components/Contents/Footer";
 
 function App() {
-  return (
-    <div className="w-screen">
-      <Home />
-      <About />
-      <Services />
-      <Works />
-      <Contact />
-      <Footer />
+  const [scrollTo, setScrollTo] = useState("");
+
+
+
+ useEffect(() => {
+   const element = document.getElementById(scrollTo);
+   if (element) {
+     window.scrollTo({
+       top: element.offsetTop - 40,
+       behavior: "smooth",
+     });
+   }
+ }, [scrollTo]);
+
+
+  return window.location.pathname === "/EN" ? (
+    <div className="w-screen overflow-y-hidden">
+      <Home lang="EN" />
+      <About lang="EN" />
+      <Services lang="EN" />
+      <Works lang="EN" />
+      <Contact lang="EN" />
+      <Footer lang="EN" />
       <HelpButton />
-      <Sidebar />
+      <Sidebar lang="EN" />
+      <ButtonUp />
+    </div>
+  ) : (
+    <div className="w-screen overflow-y-hidden">
+      <Home lang="ID" />
+      <About lang="ID" />
+      <Services lang="ID" />
+      <Works lang="ID" />
+      <Contact lang="ID" />
+      <Footer lang="ID" />
+      <HelpButton />
+      <Sidebar lang="ID" />
       <ButtonUp />
     </div>
   );

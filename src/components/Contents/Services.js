@@ -1,48 +1,30 @@
-import {
-  faDesktop,
-  faLaptopCode,
-  faMobileScreenButton,
-  faPencilRuler,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { DataStorageID } from "../Data/WholeDatas";
+import { DataStorageEN } from "../Data/WholeDatas";
 
-const Services = () => {
+const Services = ({ lang = "", setScrollTo }) => {
+
+  var Data = (lang === "EN" ? DataStorageEN : DataStorageID).ServicesData;
+
   return (
     <section id="ServicesSect">
       <div className="w-screen h-auto bg-blue-400 p-16">
         <div className="w-full h-fit text-center">
           <h1 className="text-3xl text-white font-Poppins">
-            Available Services
+            {Data.title}
             <hr className="border-gray-200 mt-5 md:mx-60 xl:mx-100" />
           </h1>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 my-20">
-          <div className="w-full h-full bg-white p-5 text-2xl text-center rounded-lg hover:shadow-lg duration-200">
-            <div className="w-full h-fit flex justify-center pb-4">
-              <FontAwesomeIcon icon={faPencilRuler} />
+          {Data.services.map((data, idx) => (
+            <div key={idx} className="w-full h-full bg-white p-5 text-2xl text-center rounded-lg hover:shadow-lg duration-200">
+              <div className="w-full h-fit flex justify-center pb-4">
+                {data.icon}
+              </div>
+              <h1 className="text-xl text-center font-Poppins">
+                {data.title}
+              </h1>
             </div>
-            <h1 className="text-xl text-center font-Poppins">Graphic Design</h1>
-          </div>
-          <div className="w-full h-full bg-white p-5 text-2xl text-center rounded-lg hover:shadow-lg duration-200">
-            <div className="w-full h-fit flex justify-center pb-4">
-              <FontAwesomeIcon icon={faDesktop} />
-            </div>
-            <h1 className="text-xl text-center font-Poppins">Web Design</h1>
-          </div>
-          <div className="w-full h-full bg-white p-5 text-2xl text-center rounded-lg hover:shadow-lg duration-200">
-            <div className="w-full h-fit flex justify-center pb-4">
-              <FontAwesomeIcon icon={faLaptopCode} />
-            </div>
-            <h1 className="text-xl text-center font-Poppins">Web Developer</h1>
-          </div>
-          <div className="w-full h-full bg-white p-5 text-2xl text-center rounded-lg hover:shadow-lg duration-200">
-            <div className="w-full h-fit flex justify-center pb-4">
-              <FontAwesomeIcon icon={faMobileScreenButton} />
-            </div>
-            <h1 className="text-xl text-center font-Poppins">
-              Mobile apps developer
-            </h1>
-          </div>
+          ))}
         </div>
       </div>
     </section>
