@@ -205,6 +205,10 @@ const DataStorageEN = {
             title: "Non-server(Only UI/UX)",
             class: "",
           },
+          {
+            title: "3-4 Website pages",
+            class: "",
+          },
         ],
         note: "",
       },
@@ -229,6 +233,10 @@ const DataStorageEN = {
             title: "Communication Priority",
             class: "",
           },
+          {
+            title: "7-9 Website pages",
+            class: "",
+          },
         ],
         note: "*Price and duration may increase as more requests are made",
       },
@@ -251,6 +259,10 @@ const DataStorageEN = {
           },
           {
             title: "Communication Priority",
+            class: "",
+          },
+          {
+            title: "15-19 Website pages",
             class: "",
           },
         ],
@@ -359,7 +371,7 @@ const DataStorageID = {
     content3: `Pesan: "Hai Bro, bagaimana kabarmu? sudah merasa baik sekarang?"`,
     content4: "Catatan: Email Anda dibutuhkan untuk membalas",
     addition1: "Atau",
-    addition2: "Hubungi saya di Whatsapp"
+    addition2: "Hubungi saya di Whatsapp",
   },
 
   FooterData: {
@@ -470,6 +482,10 @@ const DataStorageID = {
             title: "Non-server(hanya UI/UX saja)",
             class: "",
           },
+          {
+            title: "3-4 Halaman website",
+            class: "",
+          },
         ],
         note: "",
       },
@@ -494,6 +510,10 @@ const DataStorageID = {
             title: "Prioritas Komunikasi",
             class: "",
           },
+          {
+            title: "7-9 Halaman website",
+            class: "",
+          },
         ],
         note: "*Harga dan durasi dapat naik seiring banyaknya permintaan yang diajukan",
       },
@@ -516,6 +536,10 @@ const DataStorageID = {
           },
           {
             title: "Prioritas Komunikasi",
+            class: "",
+          },
+          {
+            title: "15-19 Halaman website",
             class: "",
           },
         ],
