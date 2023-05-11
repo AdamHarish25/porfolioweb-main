@@ -9,7 +9,7 @@ const Contact = ({ lang = "", setScrollTo }) => {
 
   const [toSend, setToSend] = useState({
     from_name: "",
-    to_name: "",
+    to_name: "adamharits25@gmail.com",
     message: "",
     reply_to: "",
   });
