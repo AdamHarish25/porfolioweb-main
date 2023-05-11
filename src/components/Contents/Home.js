@@ -22,7 +22,7 @@ const Home = ({lang = "", setScrollTo}) => {
           </h1>
         </div>
         <div className="absolute xs:top-3/4 left-2/4 -translate-y-1/4 -translate-x-2/4 w-full h-fit">
-          <h5 className="font-Rubik text-center font-normal xs:text-sm lg:text-xl">
+          <h5 className="font-Rubik text-center font-normal xs:text-sm lg:text-xl px-16">
             {Data.scrollButton}
           </h5>
         </div>
