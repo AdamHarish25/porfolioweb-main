@@ -44,7 +44,6 @@ function App() {
               <Pricing lang="EN" />
               <Contact lang="EN" />
               <Footer lang="EN" />
-              <HelpButton />
               <Sidebar lang="EN" />
               <ButtonUp />
             </div>
@@ -61,7 +60,6 @@ function App() {
               <Pricing lang="ID" />
               <Contact lang="ID" />
               <Footer lang="ID" />
-              <HelpButton />
               <Sidebar lang="ID" />
               <ButtonUp />
             </div>
