@@ -3,9 +3,12 @@ import ReactDOM from "react-dom";
 import "flowbite";
 import "./index.css";
 import App from "./App";
+import {BrowserRouter as Router} from 'react-router-dom'
 
 ReactDOM.render(
-    <App />,
+  <Router forceRefresh={false}>
+    <App />
+  </Router>,
 
   document.getElementById("root")
 );

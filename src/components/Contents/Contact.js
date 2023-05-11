@@ -1,6 +1,7 @@
 import { send } from "emailjs-com";
 import { useState } from "react";
 import { DataStorageEN, DataStorageID } from "../Data/WholeDatas";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Contact = ({ lang = "", setScrollTo }) => {
 
@@ -31,13 +32,13 @@ const Contact = ({ lang = "", setScrollTo }) => {
   };
   return (
     <section id="ContactSect">
-      <div className="w-screen h-auto p-10 lg:p-20 bg-blue-400">
-        <div className="h-fit w-full text-center py-10">
+      <div className="w-screen h-auto p-10 lg:p-20 bg-blue-400 space-y-10">
+        <div className="h-fit w-full text-center">
           <h1 className="text-2xl font-Poppins text-white font-bold">
             {Data.title}
           </h1>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 my-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
           <form onSubmit={onSubmit}>
             <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-5">
               <input
@@ -104,10 +105,22 @@ const Contact = ({ lang = "", setScrollTo }) => {
               <br />
             </p>
 
-            <p className="text-right text-sm font-bold">
-              {Data.content4}
-            </p>
+            <p className="text-right text-sm font-bold">{Data.content4}</p>
           </div>
+        </div>
+
+        <p className="text-center font-bold text-xl text-white">
+          {Data.addition1}
+        </p>
+
+        <div className="w-full flex items-center justify-center">
+          <a
+            href="https://wa.me/6281287647793"
+            target="_blank"
+            className="w-fit px-10 py-4 text-white font-semibold b flex items-center gap-4 bg-[#25D366]"
+          >
+            <FaWhatsapp className="text-3xl" /> {Data.addition2}
+          </a>
         </div>
       </div>
     </section>

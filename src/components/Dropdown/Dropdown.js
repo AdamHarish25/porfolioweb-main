@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Dropdown.css";
 import {FaChevronDown} from 'react-icons/fa';
+import { Link } from "react-router-dom";
 
 const Dropdown = ({ options, onChange }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,20 +32,22 @@ const Dropdown = ({ options, onChange }) => {
           {options.map((option) => (
             <li
               key={option.value}
-              className={`dropdown-item ${
+              className={`dropdown-item 
+              ${selectedOption === option ? "hidden" : "block"}
+              ${
                 selectedOption.value === option.value ? "selected" : ""
               }`}
             >
-              <a
+              <Link
                 className={`dropdown-link ${
                   selectedOption.value === option.value ? "selected" : ""
                 }`}
-                href={`/${option.label}`}
+                to={`/${option.label}`}
                 onClick={() => handleOptionClick(option)}
               >
                 <img className="dropdown-flag" src={option.flag} alt="flag" />{" "}
                 <p>{option.label}</p>
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

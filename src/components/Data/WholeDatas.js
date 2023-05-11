@@ -96,12 +96,14 @@ const DataStorageEN = {
     content1: "From",
     content2: "To",
     content3: `Messages: "Hi Bro, how do You feel? Feel any better now?"`,
-    content4: "Note: Your email is required for replying"
+    content4: "Note: Your email is required for replying",
+    addition1: "OR",
+    addition2: "Contact me on Whatsapp",
   },
 
   FooterData: {
     title1: "Resources",
-    title2: "Follow Me"
+    title2: "Follow Me",
   },
 
   HomeData: {
@@ -155,6 +157,11 @@ const DataStorageEN = {
       },
 
       {
+        title: "Pricing Lists",
+        link: "#PricingSect",
+      },
+
+      {
         title: "Contact me",
         link: "#ContactSect",
       },
@@ -177,6 +184,82 @@ const DataStorageEN = {
       flag: IDFlag,
     },
   ],
+
+  PricingData: {
+    title: "Pricing",
+    cards: [
+      {
+        price: "Rp.1.000.000",
+        crossedOutPrice: "Rp.1.700.000",
+        title: "Beginner",
+        benefits: [
+          {
+            title: "Website is done within a month",
+            class: "",
+          },
+          {
+            title: "Revision only 3x",
+            class: "",
+          },
+          {
+            title: "Non-server(Only UI/UX)",
+            class: "",
+          },
+        ],
+        note: "",
+      },
+      {
+        price: "*Rp.1.500.000",
+        crossedOutPrice: "Rp.2.200.000",
+        title: "Experienced",
+        benefits: [
+          {
+            title: "Website is done within *2 weeks",
+            class: "",
+          },
+          {
+            title: "Revision 7x",
+            class: "",
+          },
+          {
+            title: "Non-server(Only UI/UX)",
+            class: "",
+          },
+          {
+            title: "Communication Priority",
+            class: "",
+          },
+        ],
+        note: "*Price and duration may increase as more requests are made",
+      },
+      {
+        price: "*Rp.2.000.000",
+        crossedOutPrice: "Rp.2.800.000",
+        title: "Advanced",
+        benefits: [
+          {
+            title: "Website is done within *3 month",
+            class: "",
+          },
+          {
+            title: "Revision 14x",
+            class: "",
+          },
+          {
+            title: "Server-side included",
+            class: "",
+          },
+          {
+            title: "Communication Priority",
+            class: "",
+          },
+        ],
+        note: "*Price and duration may increase as more requests are made",
+      },
+    ],
+    note: "*Promo is only valid for a certain time",
+    button: "Contact Now!",
+  },
 };
 
 const DataStorageID = {
@@ -275,6 +358,8 @@ const DataStorageID = {
     content2: "Untuk",
     content3: `Pesan: "Hai Bro, bagaimana kabarmu? sudah merasa baik sekarang?"`,
     content4: "Catatan: Email Anda dibutuhkan untuk membalas",
+    addition1: "Atau",
+    addition2: "Hubungi saya di Whatsapp"
   },
 
   FooterData: {
@@ -337,6 +422,11 @@ const DataStorageID = {
       },
 
       {
+        title: "List Harga",
+        link: "#PricingSect",
+      },
+
+      {
         title: "Hubungi Kami",
         link: "#ContactSect",
       },
@@ -359,6 +449,82 @@ const DataStorageID = {
       flag: USFlag,
     },
   ],
+
+  PricingData: {
+    title: "Harga",
+    cards: [
+      {
+        price: "Rp.1.000.000",
+        crossedOutPrice: "Rp.1.700.000",
+        title: "Beginner",
+        benefits: [
+          {
+            title: "Website jadi dalam 1 bulan",
+            class: "",
+          },
+          {
+            title: "Revisi hanya 3x",
+            class: "",
+          },
+          {
+            title: "Non-server(hanya UI/UX saja)",
+            class: "",
+          },
+        ],
+        note: "",
+      },
+      {
+        price: "*Rp.1.500.000",
+        crossedOutPrice: "Rp.2.200.000",
+        title: "Experienced",
+        benefits: [
+          {
+            title: "Website jadi dalam *2 minggu",
+            class: "",
+          },
+          {
+            title: "Revisi 7x",
+            class: "",
+          },
+          {
+            title: "Non-server(hanya UI/UX saja)",
+            class: "",
+          },
+          {
+            title: "Prioritas Komunikasi",
+            class: "",
+          },
+        ],
+        note: "*Harga dan durasi dapat naik seiring banyaknya permintaan yang diajukan",
+      },
+      {
+        price: "*Rp.2.000.000",
+        crossedOutPrice: "Rp.2.800.000",
+        title: "Advanced",
+        benefits: [
+          {
+            title: "Website jadi dalam *3 bulan",
+            class: "",
+          },
+          {
+            title: "Revisi 14x",
+            class: "",
+          },
+          {
+            title: "Termasuk Server",
+            class: "",
+          },
+          {
+            title: "Prioritas Komunikasi",
+            class: "",
+          },
+        ],
+        note: "*Harga dan durasi dapat naik seiring banyaknya permintaan yang diajukan",
+      },
+    ],
+    note: "*Promo hanya berlaku dalam waktu tertentu",
+    button: "Kontak sekarang!",
+  },
 };
 
 

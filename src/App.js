@@ -11,6 +11,8 @@ import Services from "./components/Contents/Services";
 import Works from "./components/Contents/Works";
 import Contact from "./components/Contents/Contact";
 import Footer from "./components/Contents/Footer";
+import { Navigate, Route, Routes } from "react-router-dom";
+import Pricing from "./components/Contents/Pricing";
 
 function App() {
   const [scrollTo, setScrollTo] = useState("");
@@ -28,29 +30,45 @@ function App() {
  }, [scrollTo]);
 
 
-  return window.location.pathname === "/EN" ? (
+  return (
     <div className="w-screen overflow-y-hidden">
-      <Home lang="EN" />
-      <About lang="EN" />
-      <Services lang="EN" />
-      <Works lang="EN" />
-      <Contact lang="EN" />
-      <Footer lang="EN" />
-      <HelpButton />
-      <Sidebar lang="EN" />
-      <ButtonUp />
-    </div>
-  ) : (
-    <div className="w-screen overflow-y-hidden">
-      <Home lang="ID" />
-      <About lang="ID" />
-      <Services lang="ID" />
-      <Works lang="ID" />
-      <Contact lang="ID" />
-      <Footer lang="ID" />
-      <HelpButton />
-      <Sidebar lang="ID" />
-      <ButtonUp />
+      <Routes>
+        <Route
+          path="/EN"
+          element={
+            <div>
+              <Home lang="EN" />
+              <About lang="EN" />
+              <Services lang="EN" />
+              <Works lang="EN" />
+              <Pricing lang="EN" />
+              <Contact lang="EN" />
+              <Footer lang="EN" />
+              <HelpButton />
+              <Sidebar lang="EN" />
+              <ButtonUp />
+            </div>
+          }
+        />
+        <Route
+          path={"/ID"}
+          element={
+            <div>
+              <Home lang="ID" />
+              <About lang="ID" />
+              <Services lang="ID" />
+              <Works lang="ID" />
+              <Pricing lang="ID" />
+              <Contact lang="ID" />
+              <Footer lang="ID" />
+              <HelpButton />
+              <Sidebar lang="ID" />
+              <ButtonUp />
+            </div>
+          }
+        />
+        <Route path={"/*"} exact element={<Navigate to={"ID"} replace />} />
+      </Routes>
     </div>
   );
 }
