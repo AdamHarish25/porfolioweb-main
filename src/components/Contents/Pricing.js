@@ -45,7 +45,7 @@ const Pricing = ({lang = "", setScrollTo}) => {
           ))}
         </div>
 
-        <div className="flex flex-col items-center gap-4 w-full">
+        <div className="flex flex-col text-center items-center gap-4 w-full">
           <p className={className.note}>{Data.note}</p>
           <a href="#ContactSect" className="block w-fit px-16 py-4 rounded-tl-2xl hover:rounded-br-2xl transition-all duration-150 text-white font-medium hover:px-20 bg-blue-600">
               {Data.button}
