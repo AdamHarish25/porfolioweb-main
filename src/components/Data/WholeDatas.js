@@ -87,7 +87,7 @@ const DataStorageEN = {
 
   ContactData: {
     title: "Get in touch",
-    form1: "Subject's name",
+    form1: "Your name",
     form2: "Object's name",
     form3: "Your message",
     form4: "Your email",
@@ -360,7 +360,7 @@ const DataStorageID = {
 
   ContactData: {
     title: "Hubungi Kami",
-    form1: "Nama subjek",
+    form1: "Nama Anda",
     form2: "Nama objek",
     form3: "Pesan anda",
     form4: "Email anda",

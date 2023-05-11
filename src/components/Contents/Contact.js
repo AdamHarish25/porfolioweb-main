@@ -58,6 +58,7 @@ const Contact = ({ lang = "", setScrollTo }) => {
                 value={toSend.to_name}
                 onChange={handleChange}
                 required
+                readOnly
               />
             </div>
             <br />
