@@ -7,7 +7,7 @@ const About = ({ lang = "", setScrollTo }) => {
 
   return (
     <section id="AboutSect">
-      <div className="w-screen h-auto p-8 my-20">
+      <div className="w-screen h-auto p-8 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 w-full">
           <div className="w-full h-fit p-1 mt-5">
 

@@ -5,11 +5,11 @@ const Pricing = ({lang = "", setScrollTo}) => {
 
     const className = {
       container:
-        "w-screen h-auto flex flex-col items-center justify-center gap-20 font-Poppins py-20 px-10",
+        "w-screen h-auto flex flex-col items-center justify-center gap-20 font-Poppins bg-gray-100 py-20 px-10",
       title: "font-semibold text-4xl",
       note: "text-gray-400 text-sm ",
       cardBox: "w-full h-auto grid grid-cols-1 lg:grid-cols-3 gap-14",
-      card: "text-center space-y-8 p-10 rounded-xl shadow-md",
+      card: "text-center space-y-8 p-10 rounded-xl shadow-md bg-white",
       cardTitle: "text-lg font-medium",
       crossedOutPrice: "text-gray-400 text-sm",
       price: "text-2xl",

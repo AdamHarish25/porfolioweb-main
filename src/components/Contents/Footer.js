@@ -43,7 +43,7 @@ const Footer = ({ lang = "", setScrollTo }) => {
             <ul className="text-gray-600 dark:text-gray-400">
               <li className="mb-4">
                 <a
-                  href="https://instagram.com/adam_harits225"
+                  href="https://instagram.com/adam_harits75"
                   className="hover:underline "
                 >
                   Instagram
@@ -70,7 +70,7 @@ const Footer = ({ lang = "", setScrollTo }) => {
         </span>
         <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0 mr-6">
           <a
-            href="https://instagram.com/adam_harits225"
+            href="https://instagram.com/adam_harits75"
             className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
           >
             <svg

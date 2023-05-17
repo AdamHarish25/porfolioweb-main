@@ -13,6 +13,7 @@ import Contact from "./components/Contents/Contact";
 import Footer from "./components/Contents/Footer";
 import { Navigate, Route, Routes } from "react-router-dom";
 import Pricing from "./components/Contents/Pricing";
+import Benefits from "./components/Contents/Benefits";
 
 function App() {
   const [scrollTo, setScrollTo] = useState("");
@@ -37,14 +38,15 @@ function App() {
           path="/EN"
           element={
             <div>
-              <Home lang="EN" />
-              <About lang="EN" />
-              <Services lang="EN" />
-              <Works lang="EN" />
-              <Pricing lang="EN" />
-              <Contact lang="EN" />
-              <Footer lang="EN" />
-              <Sidebar lang="EN" />
+              <Home lang="EN" setScrollTo={setScrollTo} />
+              <Benefits lang="EN" setScrollTo={setScrollTo} />
+              <Services lang="EN" setScrollTo={setScrollTo} />
+              <Works lang="EN" setScrollTo={setScrollTo} />
+              <Pricing lang="EN" setScrollTo={setScrollTo} />
+              <About lang="EN" setScrollTo={setScrollTo} />
+              <Contact lang="EN" setScrollTo={setScrollTo} />
+              <Footer lang="EN" setScrollTo={setScrollTo} />
+              <Sidebar lang="EN" setScrollTo={setScrollTo} />
               <ButtonUp />
             </div>
           }
@@ -53,14 +55,15 @@ function App() {
           path={"/ID"}
           element={
             <div>
-              <Home lang="ID" />
-              <About lang="ID" />
-              <Services lang="ID" />
-              <Works lang="ID" />
-              <Pricing lang="ID" />
-              <Contact lang="ID" />
-              <Footer lang="ID" />
-              <Sidebar lang="ID" />
+              <Home lang="ID" setScrollTo={setScrollTo} />
+              <Benefits lang="ID" setScrollTo={setScrollTo} />
+              <Services lang="ID" setScrollTo={setScrollTo} />
+              <Works lang="ID" setScrollTo={setScrollTo} />
+              <Pricing lang="ID" setScrollTo={setScrollTo} />
+              <About lang="ID" setScrollTo={setScrollTo} />
+              <Contact lang="ID" setScrollTo={setScrollTo} />
+              <Footer lang="ID" setScrollTo={setScrollTo} />
+              <Sidebar lang="ID" setScrollTo={setScrollTo} />
               <ButtonUp />
             </div>
           }

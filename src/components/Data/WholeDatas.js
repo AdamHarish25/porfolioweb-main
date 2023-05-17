@@ -1,6 +1,9 @@
 import IDFlag from '../../images/CountryFlags/1x1/id.svg';
 import USFlag from '../../images/CountryFlags/1x1/us.svg';
 import { FaDesktop, FaLaptopCode, FaPencilRuler, FaServer } from 'react-icons/fa'
+import peopleExited from '../../images/3PExcited.jpg';
+import keenWorker from "../../images/keenWorker.jpg";
+
 
 const DataStorageEN = {
   AboutData: {
@@ -98,16 +101,46 @@ const DataStorageEN = {
     content3: `Messages: "Hi Bro, how do You feel? Feel any better now?"`,
     content4: "Note: Your email is required for replying",
     addition1: "OR",
-    addition2: "Contact me on Whatsapp",
+    addition2: "Consultation for free",
   },
 
   FooterData: {
     title1: "Resources",
-    title2: "Follow Me",
+    title2: "Social Media",
   },
 
+  BenefitsData: [
+    {
+      title: "85% Client's expetation fulfilled",
+      img: peopleExited,
+      titlePos: "order-2",
+      imgPos: "order-1",
+      subtitle:
+        "By meticulously understanding their unique requirements and leveraging the right expertise, we have delivered results that meet 85% of average client expectations.",
+      buttonLink: "",
+      buttonTitle: "",
+    },
+    {
+      title: "Enterprising Web Developers",
+      img: keenWorker,
+      titlePos: "order-1",
+      imgPos: "order-2",
+      subtitle:
+        "With our active developers, our passion for crafting exceptional online experiences sets us apart. We understand that a website is more than just a digital presence; it is a powerful tool that reflects a brand's identity and communicates its message effectively.",
+      buttonLink: "ContactSect",
+      buttonTitle: "Consultation for free",
+    },
+  ],
+
   HomeData: {
-    title: "Hi I'm Adam, I design & build Websites.",
+    title:
+      "Wanna have a good looking website but don't want to be complicated?",
+    subtitle: (
+      <>
+        With professional & kind developers, leave it to us! <br />
+        Let us do the work and you just sit back and wait.
+      </>
+    ),
     scrollButton: "Scroll down to see what I do",
   },
 
@@ -147,11 +180,6 @@ const DataStorageEN = {
       },
 
       {
-        title: "About",
-        link: "#AboutSect",
-      },
-
-      {
         title: "My Works",
         link: "#WorksSect",
       },
@@ -159,6 +187,11 @@ const DataStorageEN = {
       {
         title: "Pricing Lists",
         link: "#PricingSect",
+      },
+
+      {
+        title: "About",
+        link: "#AboutSect",
       },
 
       {
@@ -270,7 +303,7 @@ const DataStorageEN = {
       },
     ],
     note: "*Promo is only valid for a certain time",
-    button: "Contact Now!",
+    button: "Consultation for free!",
   },
 };
 
@@ -376,13 +409,38 @@ const DataStorageID = {
 
   FooterData: {
     title1: "Sumber Asal",
-    title2: "Ikuti saya di",
+    title2: "Social Media",
   },
 
+  BenefitsData: [
+    {
+      title: "85% Ekspetasi dari klien kami terpenuhi",
+      img: peopleExited,
+      titlePos: "order-2",
+      imgPos: "order-1",
+      subtitle:
+        "Dengan memahami persyaratan unik mereka secara cermat dan memanfaatkan keahlian dengan tepat, kami telah memberikan hasil yang memenuhi 85% dari rata-rata ekspetasi klien.",
+      buttonLink: "",
+      buttonTitle: "",
+    },
+    {
+      title: "Developer Web Giat",
+      img: keenWorker,
+      titlePos: "order-1",
+      imgPos: "order-2",
+      subtitle:
+        "Dengan adanya developer kami yang giat, semangat Kami untuk membuat pengalaman online yang luar biasa membuat kami berbeda. Kami memahami bahwa situs web lebih dari sekadar kehadiran digital; itu adalah alat yang ampuh yang mencerminkan identitas merek dan mengkomunikasikan pesannya secara efektif.",
+      buttonLink: "ContactSect",
+      buttonTitle: "Konsultasi Gratis",
+    },
+  ],
+
   HomeData: {
-    title: (
+    title: "Mau website yang bagus tapi gak mau repot?",
+    subtitle: (
       <>
-        Hai saya Adam, saya mendesain <br />& membuat Website
+        Dengan developer profesional & baik hati, serahkan pada kami! <br />
+        Biarkan kami yang mengerjakan dan anda tinggal duduk manis menunggu.
       </>
     ),
     scrollButton: "Gulir ke bawah untuk melihat apa yang bisa saya lakukan",
@@ -424,11 +482,6 @@ const DataStorageID = {
       },
 
       {
-        title: "Tentang",
-        link: "#AboutSect",
-      },
-
-      {
         title: "Hasil Pekerjaan",
         link: "#WorksSect",
       },
@@ -436,6 +489,11 @@ const DataStorageID = {
       {
         title: "List Harga",
         link: "#PricingSect",
+      },
+
+      {
+        title: "Tentang",
+        link: "#AboutSect",
       },
 
       {
@@ -547,7 +605,7 @@ const DataStorageID = {
       },
     ],
     note: "*Promo hanya berlaku dalam waktu tertentu",
-    button: "Kontak sekarang!",
+    button: "Konsultasi Gratis",
   },
 };
 

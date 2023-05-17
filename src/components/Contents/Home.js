@@ -16,18 +16,16 @@ const Home = ({lang = "", setScrollTo}) => {
           alt=""
         />
 
-        <div className="absolute xs:top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 w-full h-fit px-5">
+        <div className="absolute xs:top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 w-full h-fit px-5 space-y-4">
           <h1 className="text-center font-bold font-Poppins px-0 xl:px-40">
            {Data.title}
           </h1>
-        </div>
-        <div className="absolute xs:top-3/4 left-2/4 -translate-y-1/4 -translate-x-2/4 w-full h-fit">
-          <h5 className="font-Rubik text-center font-normal xs:text-sm lg:text-xl px-16">
-            {Data.scrollButton}
-          </h5>
+          <p className="text-sm text-center font-medium">
+            {Data.subtitle}
+          </p>
         </div>
         <div className="w-full h-fit mt-14 absolute xs:top-3/4 left-2/4 -translate-y-1/4 -translate-x-2/4 flex justify-center">
-          <a href="#AboutSect" className="text-base animate-bounce">
+          <a href="#BenefitSect" className="text-base animate-bounce">
             <FaAngleDoubleDown />
           </a>
         </div>
