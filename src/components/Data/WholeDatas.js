@@ -135,13 +135,7 @@ const DataStorageEN = {
   HomeData: {
     title:
       "Wanna have a good looking website but don't want to be complicated?",
-    subtitle: (
-      <>
-        With professional & kind developers, leave it to us! <br />
-        Let us do the work and you just sit back and wait.
-      </>
-    ),
-    scrollButton: "Scroll down to see what I do",
+    subtitle: "With professional & kind developers, leave it to us! Let us do the work and you just sit back and wait.",
   },
 
   ServicesData: {
@@ -437,13 +431,7 @@ const DataStorageID = {
 
   HomeData: {
     title: "Mau website yang bagus tapi gak mau repot?",
-    subtitle: (
-      <>
-        Dengan developer profesional & baik hati, serahkan pada kami! <br />
-        Biarkan kami yang mengerjakan dan anda tinggal duduk manis menunggu.
-      </>
-    ),
-    scrollButton: "Gulir ke bawah untuk melihat apa yang bisa saya lakukan",
+    subtitle: "Dengan developer profesional & baik hati, serahkan pada kami! Biarkan kami yang mengerjakan dan anda tinggal duduk manis menunggu.",
   },
 
   ServicesData: {

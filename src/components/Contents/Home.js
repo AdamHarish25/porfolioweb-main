@@ -16,11 +16,11 @@ const Home = ({lang = "", setScrollTo}) => {
           alt=""
         />
 
-        <div className="absolute xs:top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 w-full h-fit px-5 space-y-4">
+        <div className="absolute xs:top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 w-full h-fit px-0 xl:px-5 space-y-4">
           <h1 className="text-center font-bold font-Poppins px-0 xl:px-40">
            {Data.title}
           </h1>
-          <p className="text-sm text-center font-medium">
+          <p className="text-xs xl:text-sm text-center px-10 font-medium">
             {Data.subtitle}
           </p>
         </div>

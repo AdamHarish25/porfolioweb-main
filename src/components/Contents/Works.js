@@ -50,8 +50,7 @@ const Works = ({ lang = "", setScrollTo }) => {
         </div>
         <div
           ref={containerRef}
-          style={{ overflowX: "auto", overflowY: "hidden" }}
-          className={`flex flex-1 whitespace-nowrap my-20 h-auto w-full relative gap-10 py-10 px-7 ${
+          className={`flex flex-1 overflow-x-auto overflow-y-hidden whitespace-nowrap my-20 h-auto w-full relative gap-10 py-10 px-7 ${
             showScrollbar ? "" : "showscrollbar"
           }`}
         >

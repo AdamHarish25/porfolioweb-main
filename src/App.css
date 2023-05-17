@@ -926,14 +926,14 @@ input:checked + .toggle-bg{
   order: 1;
 }
 
-.my-20{
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
-
 .my-6{
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+.my-20{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .mb-10{
@@ -1078,14 +1078,6 @@ input:checked + .toggle-bg{
   height: 1rem;
 }
 
-.h-\[\]{
-  height: ;
-}
-
-.h-\[400px\]{
-  height: 400px;
-}
-
 .max-h-screen{
   max-height: 100vh;
 }
@@ -1162,18 +1154,6 @@ input:checked + .toggle-bg{
 
 .w-4{
   width: 1rem;
-}
-
-.w-\[300px\]{
-  width: 300px;
-}
-
-.w-\[\]{
-  width: ;
-}
-
-.w-16{
-  width: 4rem;
 }
 
 .flex-1{
@@ -1368,6 +1348,10 @@ input:checked + .toggle-bg{
   gap: 0.75rem;
 }
 
+.gap-10{
+  gap: 2.5rem;
+}
+
 .gap-4{
   gap: 1rem;
 }
@@ -1384,14 +1368,22 @@ input:checked + .toggle-bg{
   gap: 3.5rem;
 }
 
-.gap-10{
-  gap: 2.5rem;
-}
-
 .space-y-5 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+}
+
+.space-y-20 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-4 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
 .space-y-10 > :not([hidden]) ~ :not([hidden]){
@@ -1412,38 +1404,18 @@ input:checked + .toggle-bg{
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
-.space-y-4 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
-}
-
 .space-x-2 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-y-3 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
-}
-
-.space-y-12 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(3rem * var(--tw-space-y-reverse));
-}
-
-.space-y-20 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(5rem * var(--tw-space-y-reverse));
-}
-
 .self-center{
   align-self: center;
+}
+
+.overflow-x-auto{
+  overflow-x: auto;
 }
 
 .overflow-y-hidden{
@@ -1484,12 +1456,12 @@ input:checked + .toggle-bg{
   border-bottom-right-radius: 0.5rem;
 }
 
-.rounded-tl-2xl{
-  border-top-left-radius: 1rem;
-}
-
 .rounded-tr-2xl{
   border-top-right-radius: 1rem;
+}
+
+.rounded-tl-2xl{
+  border-top-left-radius: 1rem;
 }
 
 .border{
@@ -1603,16 +1575,6 @@ input:checked + .toggle-bg{
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
-.bg-gray-300{
-  --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
-}
-
-.bg-blue-500{
-  --tw-bg-opacity: 1;
-  background-color: rgb(63 131 248 / var(--tw-bg-opacity));
-}
-
 .bg-opacity-50{
   --tw-bg-opacity: 0.5;
 }
@@ -1665,10 +1627,6 @@ input:checked + .toggle-bg{
   padding: 0.5rem;
 }
 
-.p-3{
-  padding: 0.75rem;
-}
-
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -1699,6 +1657,11 @@ input:checked + .toggle-bg{
   padding-bottom: 0.5rem;
 }
 
+.py-20{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .py-5{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -1709,19 +1672,14 @@ input:checked + .toggle-bg{
   padding-right: 0px;
 }
 
-.px-16{
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-
-.py-20{
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
 .px-3{
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+
+.px-16{
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .py-10{
@@ -1742,6 +1700,11 @@ input:checked + .toggle-bg{
 .py-2\.5{
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
+}
+
+.px-20{
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .pb-4{
@@ -1772,10 +1735,6 @@ input:checked + .toggle-bg{
   font-family: 'Roboto', sans-serif;
 }
 
-.font-Rubik{
-  font-family: 'Rubik', sans-serif;
-}
-
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
@@ -1801,14 +1760,14 @@ input:checked + .toggle-bg{
   line-height: 1.25rem;
 }
 
-.text-lg{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-4xl{
@@ -1864,6 +1823,11 @@ input:checked + .toggle-bg{
   color: rgb(26 86 219 / var(--tw-text-opacity));
 }
 
+.text-blue-800{
+  --tw-text-opacity: 1;
+  color: rgb(30 66 159 / var(--tw-text-opacity));
+}
+
 .text-gray-900{
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
@@ -1882,16 +1846,6 @@ input:checked + .toggle-bg{
 .text-gray-400{
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
-}
-
-.text-blue-400{
-  --tw-text-opacity: 1;
-  color: rgb(118 169 250 / var(--tw-text-opacity));
-}
-
-.text-blue-800{
-  --tw-text-opacity: 1;
-  color: rgb(30 66 159 / var(--tw-text-opacity));
 }
 
 .opacity-0{
@@ -2018,16 +1972,12 @@ input:checked + .toggle-bg{
   /* Firefox */
 }
 
-.hover\:rounded-br-2xl:hover{
-  border-bottom-right-radius: 1rem;
-}
-
-.hover\:rounded-tr-2xl:hover{
-  border-top-right-radius: 1rem;
-}
-
 .hover\:rounded-bl-2xl:hover{
   border-bottom-left-radius: 1rem;
+}
+
+.hover\:rounded-br-2xl:hover{
+  border-bottom-right-radius: 1rem;
 }
 
 .hover\:border-gray-300:hover{
@@ -2054,14 +2004,14 @@ input:checked + .toggle-bg{
   padding: 1.5rem;
 }
 
-.hover\:px-20:hover{
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-
 .hover\:px-12:hover{
   padding-left: 3rem;
   padding-right: 3rem;
+}
+
+.hover\:px-20:hover{
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .hover\:text-gray-400:hover{
@@ -2364,17 +2314,16 @@ input:checked + .toggle-bg{
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
-
-  .lg\:text-xl{
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
 }
 
 @media (min-width: 1280px){
   .xl\:mx-100{
     margin-left: 30rem;
     margin-right: 30rem;
+  }
+
+  .xl\:h-\[400px\]{
+    height: 400px;
   }
 
   .xl\:grid-cols-3{
@@ -2389,6 +2338,16 @@ input:checked + .toggle-bg{
   .xl\:px-6{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+
+  .xl\:px-5{
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .xl\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 

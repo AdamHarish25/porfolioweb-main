@@ -15,7 +15,7 @@ const Benefits = ({lang = "", setScrollTo}) => {
             <img
               src={data.img}
               key={index}
-              className={`h-[400px] ${data.imgPos}`}
+              className={`h-auto xl:h-[400px] ${data.imgPos}`}
             />
             <div className={`space-y-4 ${data.titlePos}`}>
               <h1 className="text-3xl font-medium text-blue-800">
